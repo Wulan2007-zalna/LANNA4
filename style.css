@@ -138,3 +138,23 @@ body {
   padding: 10px;
   border-radius: 6px;
 }
+/* Animasi muncul */
+.mountain-card {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeUp 0.5s ease forwards;
+}
+
+/* Efek hover */
+.mountain-card:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeoJatim – Edukasi Gunung Jawa Timur</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <h2 class="brand">GeoJatim</h2>
+    <ul class="nav-links">
+      <li class="nav-item active" data-page="home">Home</li>
+      <li class="nav-item" data-page="gunung">Gunung</li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Eksplorasi Gunung Jawa Timur</h1>
+      <p>Temukan berbagai gunung di Jawa Timur lengkap dengan deskripsi dan fakta menarik.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid" id="mountain-list"></section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button id="closeModal" class="close">✕</button>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+      <p class="meta" id="modalMeta"></p>
+      <p class="fact"><strong>Fun Fact:</strong> <span id="modalFact"></span></p>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
